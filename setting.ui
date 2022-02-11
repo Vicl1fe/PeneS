@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_Setting</class>
+ <widget class="QDialog" name="Dialog_Setting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>836</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>设置</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Google</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0" rowspan="2" colspan="2">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>代理设置</string>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>571</width>
+            <height>26</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QComboBox" name="comboBox_GoogleSetting_protocol">
+             <property name="currentText">
+              <string>http://</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>http://</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>socks5://</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_GoogleSetting_ip">
+             <property name="placeholderText">
+              <string>代理IP</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_GoogleSetting_port">
+             <property name="placeholderText">
+              <string>代理端口</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QDialogButtonBox" name="buttonBox_GoogleSetting_button">
+         <property name="contextMenuPolicy">
+          <enum>Qt::PreventContextMenu</enum>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="standardButtons">
+          <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>FOFA</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>431</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Key设置</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>391</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,6">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Email:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_FOFASetting_Email"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,6">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Key:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_FOFASetting_Key"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QDialogButtonBox" name="buttonBox_FOFASetting_button">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>360</y>
+         <width>781</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::PreventContextMenu</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>180</y>
+         <width>431</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>显示设置</string>
+       </property>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_host">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>URL</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_ip">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>IP</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_port">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>端口</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_title">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>150</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>标题</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_domain">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>70</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>域名</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_protocol">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>110</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>协议</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_banner">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>30</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>banner</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_cert">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>30</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>cert</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_country">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>110</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>country</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_province">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>150</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>province</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_country_name">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>70</y>
+          <width>121</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>country_name</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_header">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>150</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>header</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_server">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>30</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>server</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_FOFASetting_export_city">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>70</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>city</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox_GoogleSetting_button</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog_Setting</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox_GoogleSetting_button</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog_Setting</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
